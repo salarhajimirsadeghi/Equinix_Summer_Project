@@ -1,0 +1,15 @@
+/* Empty. Add your own CSS if you like */
+
+/*doesn't work*/
+.list.card{
+	color: black;
+}
+
+.item-divider{
+	color: red;
+}
+
+/* doesn't work*/
+.tabs-icon-top.tabs-color-active-positive{
+	color:black;
+}

@@ -1,0 +1,19 @@
+<ion-view view-title="Alerts">
+  <ion-content>
+
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="company in companies" type="item-text-wrap" href="#/tab/alerts/{{company.Name}}">
+        <!-- <img ng-src="{{alert.Serial}}"> -->
+        <img src="https://logo.clearbit.com/{{company.Name}}.com">
+        <h2>{{company.Name | uppercase}}</h2>
+
+        <!-- <p>{{company.Serial}}</p> -->
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(alert)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

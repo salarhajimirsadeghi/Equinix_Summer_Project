@@ -1,0 +1,26 @@
+<ion-view view-title="{{companies[0].Name | uppercase}}">
+  <ion-content class="padding">
+    <div ng-repeat="company in companies">
+      <div class="list">
+          <a class="item item-thumbnail-left" href="#">
+            <img src="https://logo.clearbit.com/{{company.Name}}.com">
+            <h2>Group ID: {{company.group_id}}</h2>
+            <h2>Serial: {{company.Serial}}</h2>
+            <h2>Cage: {{company.CAGE_NUM}}</h2>
+            <h2>Cabin: {{company.CAB_NUMBER}}</h2>
+            <!-- <h2>MOD_BUS: {{company.MOD_BUS}}</h2>
+            <h2>Panel: {{company.Panel}}</h2> -->
+            <h2>Board: {{company.Board}}</h2>
+            <h2>Circuit: {{company.Circuit}}</h2>
+            <h2>AMP: {{company.Amp}}</h2>
+              <h2 ng-If="company.Status==1">
+                <i class="icon ion-android-checkbox-blank balanced"></i>
+              </h2>
+               <h2 ng-If="company.Status==2">
+                <i class="icon ion-android-checkbox-blank assertive"></i>
+              </h2>
+          </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,54 @@
+<head> 
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<ion-view view-title="Equinix BCM Page">
+  <ion-content class="padding">
+    
+
+<!--     <form class="form-inline">
+        <div class="form-group">
+            <label >Search</label>
+            <input type="text" ng-model="search" class="form-control" placeholder="Search">
+        </div>
+    </form> -->
+
+    <!--Search B-->
+    <div class="list card">
+      <div class="item item-divider">Search</div>
+      <div class="bar bar-header item-input-inset">
+        <label class="item-input-wrapper">
+          <i class="icon ion-ios-search placeholder-icon"></i>
+          <input type="search" ng-model="search" class="form-control" placeholder="Search">
+        </label>
+       <!-- <img src="https://logo.clearbit.com/{{company.Name}}.com" href="#/tab/alerts/{{company.Name}}"/> -->
+
+        <!-- <p>{{company.Serial}}</p> -->
+      <!--   < class="icon ion-chevron-right icon-accessory" href="#/tab/alerts/apple"></i>
+ -->
+        <!-- <div ng-repeat="company in companies|filter:search">
+          <!-- {{company.Name}}          -->
+        <!-- div -->
+        <!--WHEN LOADING, WANT TO SHOW THE RIPPLE LOADING SIGN BELOW-->
+        <!--<ion-ripple icon="spiral"></ion-ripple>-->
+        <button class="button" ui-sref="tab.search">
+          Search
+        </button>
+
+      </div>
+    </div>
+
+
+    <!-- Alert Counter-->
+    <div class="list card">
+      <div class="item item-divider">Alert Counter </div>
+       <div class="item item-body">
+        <div>
+          <!-- maybe ionicapp -->
+          <body ng-app="ionicApp" ng-controller="MainCtrl"> <b>{{alertCounters}}</b> Alerts</body> 
+        </div>
+      </div>
+    </div>
+
+
+  </ion-content>
+</ion-view>
